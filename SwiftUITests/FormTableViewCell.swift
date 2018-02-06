@@ -12,7 +12,7 @@ import MZFormSheetPresentationController
 
 protocol FormTableViewCellDelegate: NSObjectProtocol {
     
-    func formViewCell(_ cell: UITableViewCell, didSelectFormItem item: TableItemVM)
+    func formViewCell(_ cell: UITableViewCell, didSelectFormItem item: TableItemVM, controller: MZFormSheetPresentationViewController)
     
 }
 
@@ -39,9 +39,7 @@ class FormTableViewCell: UITableViewCell {
         let formSheetController = MZFormSheetPresentationViewController(contentViewController: pickerController)
         formSheetController.presentationController?.shouldCenterVertically = true
         formSheetController.contentViewCornerRadius = 15.0
-        formSheetController.willDismissContentViewControllerHandler = { controller in
-            
-        }
+        
         return formSheetController
     }
     
@@ -51,13 +49,12 @@ class FormTableViewCell: UITableViewCell {
         self.tableItem = tableItem
         self.delegate = delegate
         optionsButton.setTitle("Choose", for: .normal)
-        
     }
     
     // MARK: - Actions
     
     @IBAction func itemPressed(_ sender: Any) {
-        delegate?.formViewCell(self, didSelectFormItem: self.tableItem!)
+        delegate?.formViewCell(self, didSelectFormItem: self.tableItem!, controller: createPickerController())
     }
     
 }

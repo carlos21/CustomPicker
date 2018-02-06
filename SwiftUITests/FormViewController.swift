@@ -48,26 +48,12 @@ class FormViewController: UITableViewController {
     
     // MARK: - Private
     
-    func showPickerController() {
-        let pickerController = PickerViewController<BankVM>(items: BankVM.getList())
-        pickerController.delegate = self
-        
-        let formSheetController = MZFormSheetPresentationViewController(contentViewController: pickerController)
-        formSheetController.presentationController?.shouldCenterVertically = true
-        formSheetController.contentViewCornerRadius = 15.0
-        formSheetController.willDismissContentViewControllerHandler = { controller in
-            
-        }
-        
-        present(formSheetController, animated: true, completion: nil)
-    }
-    
 }
 
 extension FormViewController: FormTableViewCellDelegate {
     
-    func formViewCell(_ cell: UITableViewCell, didSelectFormItem item: TableItemVM) {
-        showPickerController()
+    func formViewCell(_ cell: UITableViewCell, didSelectFormItem item: TableItemVM, controller: MZFormSheetPresentationViewController) {
+        present(controller, animated: true, completion: nil)
     }
     
 }

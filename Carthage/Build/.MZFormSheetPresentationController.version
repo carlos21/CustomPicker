@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "8e0f7477070d9748e709bd4ac8aedf2246595f89",
+  "iOS" : [
+    {
+      "name" : "MZFormSheetPresentationController",
+      "hash" : "0c61e47b3cc159e39895e0b8674c53a9228627338980ab245f1a88e89a8046d9"
+    }
+  ]
+}

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350E229A202BBEAF00DE0EA2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E2299202BBEAF00DE0EA2 /* Constants.swift */; };
+		350E229C202BBF2A00DE0EA2 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E229B202BBF2A00DE0EA2 /* UIColor+.swift */; };
+		350E229E202BBFA800DE0EA2 /* ImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E229D202BBFA800DE0EA2 /* ImageView+.swift */; };
 		356AF7CC2029EDF600C7AEF8 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356AF7CB2029EDF600C7AEF8 /* SnapKit.framework */; };
 		356AF7CE2029F2FB00C7AEF8 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AF7CD2029F2FB00C7AEF8 /* FormViewController.swift */; };
 		356AF7D0202A1AFB00C7AEF8 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AF7CF202A1AFB00C7AEF8 /* Bank.swift */; };
@@ -19,6 +22,7 @@
 		358CD5732027D61A0066F3FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358CD5712027D61A0066F3FC /* Main.storyboard */; };
 		358CD5752027D61A0066F3FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 358CD5742027D61A0066F3FC /* Assets.xcassets */; };
 		358CD5782027D61A0066F3FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358CD5762027D61A0066F3FC /* LaunchScreen.storyboard */; };
+		35CD8586202BB82700368131 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD8585202BB82700368131 /* CustomButton.swift */; };
 		35DCA0E3202A995700324EDA /* PickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DCA0E2202A995700324EDA /* PickerTableViewCell.xib */; };
 		35DCA0E5202AB77100324EDA /* FormTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DCA0E4202AB77100324EDA /* FormTableViewCell.xib */; };
 		35E453B12029DBBF0022F9E5 /* MZFormSheetPresentationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E453AF2029DBBF0022F9E5 /* MZFormSheetPresentationController.framework */; };
@@ -27,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		350E2299202BBEAF00DE0EA2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		350E229B202BBF2A00DE0EA2 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		350E229D202BBFA800DE0EA2 /* ImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+.swift"; sourceTree = "<group>"; };
 		356AF7CB2029EDF600C7AEF8 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		356AF7CD2029F2FB00C7AEF8 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		356AF7CF202A1AFB00C7AEF8 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
@@ -41,6 +48,7 @@
 		358CD5742027D61A0066F3FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		358CD5772027D61A0066F3FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		358CD5792027D61A0066F3FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35CD8585202BB82700368131 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		35DCA0E2202A995700324EDA /* PickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerTableViewCell.xib; sourceTree = "<group>"; };
 		35DCA0E4202AB77100324EDA /* FormTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTableViewCell.xib; sourceTree = "<group>"; };
 		35E453AF2029DBBF0022F9E5 /* MZFormSheetPresentationController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MZFormSheetPresentationController.framework; path = Carthage/Build/iOS/MZFormSheetPresentationController.framework; sourceTree = "<group>"; };
@@ -97,6 +105,10 @@
 				358CD5792027D61A0066F3FC /* Info.plist */,
 				358CD5762027D61A0066F3FC /* LaunchScreen.storyboard */,
 				358CD5712027D61A0066F3FC /* Main.storyboard */,
+				35CD8585202BB82700368131 /* CustomButton.swift */,
+				350E2299202BBEAF00DE0EA2 /* Constants.swift */,
+				350E229B202BBF2A00DE0EA2 /* UIColor+.swift */,
+				350E229D202BBFA800DE0EA2 /* ImageView+.swift */,
 			);
 			path = SwiftUITests;
 			sourceTree = "<group>";
@@ -208,8 +220,12 @@
 			files = (
 				3589483420295CE4009486FB /* FormTableViewCell.swift in Sources */,
 				356AF7D0202A1AFB00C7AEF8 /* Bank.swift in Sources */,
+				35CD8586202BB82700368131 /* CustomButton.swift in Sources */,
 				35894836202967D3009486FB /* PickerTableViewCell.swift in Sources */,
+				350E229E202BBFA800DE0EA2 /* ImageView+.swift in Sources */,
+				350E229C202BBF2A00DE0EA2 /* UIColor+.swift in Sources */,
 				356AF7CE2029F2FB00C7AEF8 /* FormViewController.swift in Sources */,
+				350E229A202BBEAF00DE0EA2 /* Constants.swift in Sources */,
 				358CD5702027D6190066F3FC /* ViewController.swift in Sources */,
 				358CD56E2027D6190066F3FC /* AppDelegate.swift in Sources */,
 				356AF7D2202A1B2900C7AEF8 /* BankVM.swift in Sources */,

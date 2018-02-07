@@ -1,5 +1,5 @@
 //
-//  FormSheetItemViewCell.swift
+//  PickerTableViewCell.swift
 //  SwiftUITests
 //
 //  Created by Carlos Duclos on 2/5/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PickerViewTableViewCell: UITableViewCell {
+class PickerTableViewCell: UITableViewCell {
     
     // MARK: - IBOutlets
     
@@ -27,7 +27,7 @@ class PickerViewTableViewCell: UITableViewCell {
     // MARK: - Private
     
     func setup<Item>(item: Item) where Item: PickableItem {
-        textLabel!.text = item.description
+        nameLabel.text = item.description
     }
     
 }

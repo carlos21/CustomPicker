@@ -37,7 +37,8 @@ class FormViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableItem = tableItems[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FormTableViewCell", for: indexPath) as! FormTableViewCell
+        let identifier = String(describing: FormTableViewCell.self)
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! FormTableViewCell
         cell.setupView(with: tableItem, delegate: self)
         return cell
     }
@@ -48,20 +49,24 @@ class FormViewController: UITableViewController {
     
     // MARK: - Private
     
-}
-
-extension FormViewController: FormTableViewCellDelegate {
-    
-    func formViewCell(_ cell: UITableViewCell, didSelectFormItem item: TableItemVM, controller: MZFormSheetPresentationViewController) {
-        present(controller, animated: true, completion: nil)
+    private func createPickerController(forCell cell: FormTableViewCell) -> MZFormSheetPresentationViewController {
+        let pickerController = PickerViewController<BankVM>(items: BankVM.getList())
+        pickerController.delegate = cell
+        
+        let formSheetController = MZFormSheetPresentationViewController(contentViewController: pickerController)
+        formSheetController.presentationController?.shouldCenterVertically = true
+        formSheetController.contentViewCornerRadius = 15.0
+        
+        return formSheetController
     }
     
 }
 
-extension FormViewController: PickerViewControllerDelegate {
+extension FormViewController: FormTableViewCellDelegate {
     
-    func pickerViewController<BankVM>(_ controller: PickerViewController<BankVM>, didSelectItem item: BankVM?) {
-        
+    func formViewCell(_ cell: FormTableViewCell, didSelectFormItem item: TableItemVM) {
+        let pickerController = createPickerController(forCell: cell)
+        present(pickerController, animated: true, completion: nil)
     }
     
 }

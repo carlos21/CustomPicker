@@ -13,7 +13,8 @@ protocol PickableItem: CustomStringConvertible {}
 
 protocol PickerViewControllerDelegate: NSObjectProtocol {
     
-    func pickerViewController<Item>(_ controller: PickerViewController<Item>, didSelectItem item: Item?)
+    func pickerViewController<Item>(_ controller: PickerViewController<Item>, didSelectItem item: Item)
+    func pickerViewControllerCancelPressed<Item>(_ controller: PickerViewController<Item>)
     
 }
 
@@ -42,7 +43,10 @@ final class PickerViewController<Item: PickableItem>: UIViewController, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(PickerViewTableViewCell.self, forCellReuseIdentifier: "PickerViewTableViewCell")
+        let nameCell = String(describing: PickerTableViewCell.self)
+        let nib = UINib(nibName: nameCell, bundle: Bundle.main)
+        tableView.register(nib, forCellReuseIdentifier: nameCell)
+        
         tableView.estimatedRowHeight = 76
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.reloadData()
@@ -52,7 +56,7 @@ final class PickerViewController<Item: PickableItem>: UIViewController, UITableV
     
     @IBAction func cancelPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
-        delegate?.pickerViewController(self, didSelectItem: nil)
+        delegate?.pickerViewControllerCancelPressed(self)
     }
     
     // MARK: - UITableViewDataSource
@@ -63,8 +67,8 @@ final class PickerViewController<Item: PickableItem>: UIViewController, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = items[indexPath.row]
-        let identifier = String(describing: PickerViewTableViewCell.self)
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! PickerViewTableViewCell
+        let identifier = String(describing: PickerTableViewCell.self)
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! PickerTableViewCell
         cell.setup(item: item)
         return cell
     }

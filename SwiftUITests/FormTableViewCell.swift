@@ -12,35 +12,55 @@ import MZFormSheetPresentationController
 
 protocol FormTableViewCellDelegate: NSObjectProtocol {
     
-    func formViewCell(_ cell: UITableViewCell, didSelectFormItem item: TableItemVM, controller: MZFormSheetPresentationViewController)
+    func formViewCell(_ cell: FormTableViewCell, didSelectFormItem item: TableItemVM)
     
 }
 
+@IBDesignable
 class FormTableViewCell: UITableViewCell {
     
     // MARK: - IBOutlets
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var optionsButton: UIButton!
+    
+    // MARK: - Properties
+    
     weak var delegate: FormTableViewCellDelegate?
     var tableItem: TableItemVM?
     var selectedItem: PickableItem?
+    var view: UIView!
+    
+    // MARK: - Lifecycle
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setup()
+    }
     
     // MARK: - Private
     
-    func updateView() {
-        optionsButton.setTitle(selectedItem?.description, for: .normal)
+    private func setup() {
+        view = loadViewFromNib()
+        view.frame = bounds
+        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        contentView.addSubview(view)
     }
     
-    private func createPickerController() -> MZFormSheetPresentationViewController {
-        let pickerController = PickerViewController<BankVM>(items: BankVM.getList())
-        pickerController.delegate = self
-        
-        let formSheetController = MZFormSheetPresentationViewController(contentViewController: pickerController)
-        formSheetController.presentationController?.shouldCenterVertically = true
-        formSheetController.contentViewCornerRadius = 15.0
-        
-        return formSheetController
+    private func loadViewFromNib() -> UIView {
+        let name = String(describing: FormTableViewCell.self)
+        let bundle = Bundle(for: FormTableViewCell.self)
+        let nib = UINib(nibName: name, bundle: bundle)
+        return nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    }
+    
+    private func updateView() {
+        optionsButton.setTitle(selectedItem?.description, for: .normal)
     }
     
     // MARK: - Public
@@ -54,16 +74,20 @@ class FormTableViewCell: UITableViewCell {
     // MARK: - Actions
     
     @IBAction func itemPressed(_ sender: Any) {
-        delegate?.formViewCell(self, didSelectFormItem: self.tableItem!, controller: createPickerController())
+        delegate?.formViewCell(self, didSelectFormItem: self.tableItem!)
     }
     
 }
 
 extension FormTableViewCell: PickerViewControllerDelegate {
     
-    func pickerViewController<Item>(_ controller: PickerViewController<Item>, didSelectItem item: Item?) {
+    func pickerViewController<Item>(_ controller: PickerViewController<Item>, didSelectItem item: Item) {
         selectedItem = item
         updateView()
+    }
+    
+    func pickerViewControllerCancelPressed<Item>(_ controller: PickerViewController<Item>) {
+        
     }
     
 }

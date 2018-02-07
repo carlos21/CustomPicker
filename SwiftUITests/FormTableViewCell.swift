@@ -12,7 +12,8 @@ import MZFormSheetPresentationController
 
 protocol FormTableViewCellDelegate: NSObjectProtocol {
     
-    func formViewCell(_ cell: FormTableViewCell, didSelectFormItem item: TableItemVM)
+    func formViewCell(_ cell: FormTableViewCell, didSelectFormItem item: FormItemVM)
+    func formViewCell(_ cell: FormTableViewCell, didSelectItem item: PickableItem)
     
 }
 
@@ -27,7 +28,7 @@ class FormTableViewCell: UITableViewCell {
     // MARK: - Properties
     
     weak var delegate: FormTableViewCellDelegate?
-    var tableItem: TableItemVM?
+    var formItem: FormItemVM?
     var selectedItem: PickableItem?
     var view: UIView!
     
@@ -65,16 +66,17 @@ class FormTableViewCell: UITableViewCell {
     
     // MARK: - Public
     
-    func setupView(with tableItem: TableItemVM, delegate: FormTableViewCellDelegate) {
-        self.tableItem = tableItem
+    func setupView(with formItem: FormItemVM, delegate: FormTableViewCellDelegate) {
+        self.formItem = formItem
         self.delegate = delegate
+        selectionStyle = .none
         optionsButton.setTitle("Choose", for: .normal)
     }
     
     // MARK: - Actions
     
     @IBAction func itemPressed(_ sender: Any) {
-        delegate?.formViewCell(self, didSelectFormItem: self.tableItem!)
+        delegate?.formViewCell(self, didSelectFormItem: self.formItem!)
     }
     
 }

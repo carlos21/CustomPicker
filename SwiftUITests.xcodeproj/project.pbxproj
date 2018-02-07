@@ -11,7 +11,6 @@
 		356AF7CE2029F2FB00C7AEF8 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AF7CD2029F2FB00C7AEF8 /* FormViewController.swift */; };
 		356AF7D0202A1AFB00C7AEF8 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AF7CF202A1AFB00C7AEF8 /* Bank.swift */; };
 		356AF7D2202A1B2900C7AEF8 /* BankVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AF7D1202A1B2900C7AEF8 /* BankVM.swift */; };
-		356AF7D6202A53D300C7AEF8 /* TableItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AF7D5202A53D300C7AEF8 /* TableItemVM.swift */; };
 		3589483220295A4A009486FB /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589483120295A4A009486FB /* PickerViewController.swift */; };
 		3589483420295CE4009486FB /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589483320295CE4009486FB /* FormTableViewCell.swift */; };
 		35894836202967D3009486FB /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35894835202967D3009486FB /* PickerTableViewCell.swift */; };
@@ -32,7 +31,6 @@
 		356AF7CD2029F2FB00C7AEF8 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		356AF7CF202A1AFB00C7AEF8 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		356AF7D1202A1B2900C7AEF8 /* BankVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankVM.swift; sourceTree = "<group>"; };
-		356AF7D5202A53D300C7AEF8 /* TableItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableItemVM.swift; sourceTree = "<group>"; };
 		3589483120295A4A009486FB /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		3589483320295CE4009486FB /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
 		35894835202967D3009486FB /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
@@ -84,22 +82,21 @@
 		358CD56C2027D6190066F3FC /* SwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
+				356AF7CF202A1AFB00C7AEF8 /* Bank.swift */,
+				356AF7D1202A1B2900C7AEF8 /* BankVM.swift */,
 				358CD56D2027D6190066F3FC /* AppDelegate.swift */,
 				358CD56F2027D6190066F3FC /* ViewController.swift */,
 				356AF7CD2029F2FB00C7AEF8 /* FormViewController.swift */,
 				3589483320295CE4009486FB /* FormTableViewCell.swift */,
 				35DCA0E4202AB77100324EDA /* FormTableViewCell.xib */,
-				358CD5712027D61A0066F3FC /* Main.storyboard */,
-				358CD5742027D61A0066F3FC /* Assets.xcassets */,
-				358CD5762027D61A0066F3FC /* LaunchScreen.storyboard */,
-				358CD5792027D61A0066F3FC /* Info.plist */,
-				356AF7CF202A1AFB00C7AEF8 /* Bank.swift */,
-				356AF7D1202A1B2900C7AEF8 /* BankVM.swift */,
-				356AF7D5202A53D300C7AEF8 /* TableItemVM.swift */,
 				3589483120295A4A009486FB /* PickerViewController.swift */,
 				35E453B32029E0D10022F9E5 /* PickerViewController.xib */,
 				35894835202967D3009486FB /* PickerTableViewCell.swift */,
 				35DCA0E2202A995700324EDA /* PickerTableViewCell.xib */,
+				358CD5742027D61A0066F3FC /* Assets.xcassets */,
+				358CD5792027D61A0066F3FC /* Info.plist */,
+				358CD5762027D61A0066F3FC /* LaunchScreen.storyboard */,
+				358CD5712027D61A0066F3FC /* Main.storyboard */,
 			);
 			path = SwiftUITests;
 			sourceTree = "<group>";
@@ -212,7 +209,6 @@
 				3589483420295CE4009486FB /* FormTableViewCell.swift in Sources */,
 				356AF7D0202A1AFB00C7AEF8 /* Bank.swift in Sources */,
 				35894836202967D3009486FB /* PickerTableViewCell.swift in Sources */,
-				356AF7D6202A53D300C7AEF8 /* TableItemVM.swift in Sources */,
 				356AF7CE2029F2FB00C7AEF8 /* FormViewController.swift in Sources */,
 				358CD5702027D6190066F3FC /* ViewController.swift in Sources */,
 				358CD56E2027D6190066F3FC /* AppDelegate.swift in Sources */,

@@ -41,5 +41,27 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>UIAppFonts</key>
+    <array>
+        <string>FrutigerLTPro-Black.ttf</string>
+        <string>FrutigerLTPro-BlackCn.ttf</string>
+        <string>FrutigerLTPro-BlackCnIta.ttf</string>
+        <string>FrutigerLTPro-BlackItalic.ttf</string>
+        <string>FrutigerLTPro-Bold.ttf</string>
+        <string>FrutigerLTPro-BoldCn.ttf</string>
+        <string>FrutigerLTPro-BoldCnIta.ttf</string>
+        <string>FrutigerLTPro-BoldItalic.ttf</string>
+        <string>FrutigerLTPro-Condensed.ttf</string>
+        <string>FrutigerLTPro-CondensedIta.ttf</string>
+        <string>FrutigerLTPro-ExtraBlackCn.ttf</string>
+        <string>FrutigerLTPro-ExtraBlkCnIta.ttf</string>
+        <string>FrutigerLTPro-Italic.ttf</string>
+        <string>FrutigerLTPro-Light.ttf</string>
+        <string>FrutigerLTPro-LightCn.ttf</string>
+        <string>FrutigerLTPro-LightCnIta.ttf</string>
+        <string>FrutigerLTPro-LightItalic.ttf</string>
+        <string>FrutigerLTPro-Roman.ttf</string>
+        <string>FrutigerLTPro-UltraBlack.ttf</string>
+    </array>
 </dict>
 </plist>

@@ -10,6 +10,26 @@
 		350E229A202BBEAF00DE0EA2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E2299202BBEAF00DE0EA2 /* Constants.swift */; };
 		350E229C202BBF2A00DE0EA2 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E229B202BBF2A00DE0EA2 /* UIColor+.swift */; };
 		350E229E202BBFA800DE0EA2 /* ImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E229D202BBFA800DE0EA2 /* ImageView+.swift */; };
+		35269229202D0FD000D74234 /* FrutigerLTPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35269216202D0FD000D74234 /* FrutigerLTPro-Black.ttf */; };
+		3526922A202D0FD000D74234 /* FrutigerLTPro-BlackCn.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35269217202D0FD000D74234 /* FrutigerLTPro-BlackCn.ttf */; };
+		3526922B202D0FD000D74234 /* FrutigerLTPro-BlackCnIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35269218202D0FD000D74234 /* FrutigerLTPro-BlackCnIta.ttf */; };
+		3526922C202D0FD000D74234 /* FrutigerLTPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35269219202D0FD000D74234 /* FrutigerLTPro-BlackItalic.ttf */; };
+		3526922D202D0FD000D74234 /* FrutigerLTPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3526921A202D0FD000D74234 /* FrutigerLTPro-Bold.ttf */; };
+		3526922E202D0FD000D74234 /* FrutigerLTPro-BoldCn.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3526921B202D0FD000D74234 /* FrutigerLTPro-BoldCn.ttf */; };
+		3526922F202D0FD000D74234 /* FrutigerLTPro-BoldCnIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3526921C202D0FD000D74234 /* FrutigerLTPro-BoldCnIta.ttf */; };
+		35269230202D0FD000D74234 /* FrutigerLTPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3526921D202D0FD000D74234 /* FrutigerLTPro-BoldItalic.ttf */; };
+		35269231202D0FD000D74234 /* FrutigerLTPro-Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3526921E202D0FD000D74234 /* FrutigerLTPro-Condensed.ttf */; };
+		35269232202D0FD000D74234 /* FrutigerLTPro-CondensedIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3526921F202D0FD000D74234 /* FrutigerLTPro-CondensedIta.ttf */; };
+		35269233202D0FD000D74234 /* FrutigerLTPro-ExtraBlackCn.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35269220202D0FD000D74234 /* FrutigerLTPro-ExtraBlackCn.ttf */; };
+		35269234202D0FD000D74234 /* FrutigerLTPro-ExtraBlkCnIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35269221202D0FD000D74234 /* FrutigerLTPro-ExtraBlkCnIta.ttf */; };
+		35269235202D0FD000D74234 /* FrutigerLTPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35269222202D0FD000D74234 /* FrutigerLTPro-Italic.ttf */; };
+		35269236202D0FD000D74234 /* FrutigerLTPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35269223202D0FD000D74234 /* FrutigerLTPro-Light.ttf */; };
+		35269237202D0FD000D74234 /* FrutigerLTPro-LightCn.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35269224202D0FD000D74234 /* FrutigerLTPro-LightCn.ttf */; };
+		35269238202D0FD000D74234 /* FrutigerLTPro-LightCnIta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35269225202D0FD000D74234 /* FrutigerLTPro-LightCnIta.ttf */; };
+		35269239202D0FD000D74234 /* FrutigerLTPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35269226202D0FD000D74234 /* FrutigerLTPro-LightItalic.ttf */; };
+		3526923A202D0FD000D74234 /* FrutigerLTPro-Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35269227202D0FD000D74234 /* FrutigerLTPro-Roman.ttf */; };
+		3526923B202D0FD000D74234 /* FrutigerLTPro-UltraBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35269228202D0FD000D74234 /* FrutigerLTPro-UltraBlack.ttf */; };
+		3526923F202D115600D74234 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3526923E202D115600D74234 /* Rswift.framework */; };
 		356AF7CC2029EDF600C7AEF8 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356AF7CB2029EDF600C7AEF8 /* SnapKit.framework */; };
 		356AF7CE2029F2FB00C7AEF8 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AF7CD2029F2FB00C7AEF8 /* FormViewController.swift */; };
 		356AF7D0202A1AFB00C7AEF8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AF7CF202A1AFB00C7AEF8 /* Model.swift */; };
@@ -22,6 +42,7 @@
 		358CD5732027D61A0066F3FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358CD5712027D61A0066F3FC /* Main.storyboard */; };
 		358CD5752027D61A0066F3FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 358CD5742027D61A0066F3FC /* Assets.xcassets */; };
 		358CD5782027D61A0066F3FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358CD5762027D61A0066F3FC /* LaunchScreen.storyboard */; };
+		35ACA6EF202D127700E0E5F6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ACA6EE202D127700E0E5F6 /* R.generated.swift */; };
 		35CD8586202BB82700368131 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD8585202BB82700368131 /* CustomButton.swift */; };
 		35DCA0E3202A995700324EDA /* PickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DCA0E2202A995700324EDA /* PickerTableViewCell.xib */; };
 		35DCA0E5202AB77100324EDA /* FormSelectableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DCA0E4202AB77100324EDA /* FormSelectableCell.xib */; };
@@ -34,6 +55,26 @@
 		350E2299202BBEAF00DE0EA2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		350E229B202BBF2A00DE0EA2 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		350E229D202BBFA800DE0EA2 /* ImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+.swift"; sourceTree = "<group>"; };
+		35269216202D0FD000D74234 /* FrutigerLTPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-Black.ttf"; sourceTree = "<group>"; };
+		35269217202D0FD000D74234 /* FrutigerLTPro-BlackCn.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-BlackCn.ttf"; sourceTree = "<group>"; };
+		35269218202D0FD000D74234 /* FrutigerLTPro-BlackCnIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-BlackCnIta.ttf"; sourceTree = "<group>"; };
+		35269219202D0FD000D74234 /* FrutigerLTPro-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-BlackItalic.ttf"; sourceTree = "<group>"; };
+		3526921A202D0FD000D74234 /* FrutigerLTPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-Bold.ttf"; sourceTree = "<group>"; };
+		3526921B202D0FD000D74234 /* FrutigerLTPro-BoldCn.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-BoldCn.ttf"; sourceTree = "<group>"; };
+		3526921C202D0FD000D74234 /* FrutigerLTPro-BoldCnIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-BoldCnIta.ttf"; sourceTree = "<group>"; };
+		3526921D202D0FD000D74234 /* FrutigerLTPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3526921E202D0FD000D74234 /* FrutigerLTPro-Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-Condensed.ttf"; sourceTree = "<group>"; };
+		3526921F202D0FD000D74234 /* FrutigerLTPro-CondensedIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-CondensedIta.ttf"; sourceTree = "<group>"; };
+		35269220202D0FD000D74234 /* FrutigerLTPro-ExtraBlackCn.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-ExtraBlackCn.ttf"; sourceTree = "<group>"; };
+		35269221202D0FD000D74234 /* FrutigerLTPro-ExtraBlkCnIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-ExtraBlkCnIta.ttf"; sourceTree = "<group>"; };
+		35269222202D0FD000D74234 /* FrutigerLTPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-Italic.ttf"; sourceTree = "<group>"; };
+		35269223202D0FD000D74234 /* FrutigerLTPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-Light.ttf"; sourceTree = "<group>"; };
+		35269224202D0FD000D74234 /* FrutigerLTPro-LightCn.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-LightCn.ttf"; sourceTree = "<group>"; };
+		35269225202D0FD000D74234 /* FrutigerLTPro-LightCnIta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-LightCnIta.ttf"; sourceTree = "<group>"; };
+		35269226202D0FD000D74234 /* FrutigerLTPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-LightItalic.ttf"; sourceTree = "<group>"; };
+		35269227202D0FD000D74234 /* FrutigerLTPro-Roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-Roman.ttf"; sourceTree = "<group>"; };
+		35269228202D0FD000D74234 /* FrutigerLTPro-UltraBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTPro-UltraBlack.ttf"; sourceTree = "<group>"; };
+		3526923E202D115600D74234 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		356AF7CB2029EDF600C7AEF8 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		356AF7CD2029F2FB00C7AEF8 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		356AF7CF202A1AFB00C7AEF8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -48,6 +89,7 @@
 		358CD5742027D61A0066F3FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		358CD5772027D61A0066F3FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		358CD5792027D61A0066F3FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35ACA6EE202D127700E0E5F6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		35CD8585202BB82700368131 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		35DCA0E2202A995700324EDA /* PickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerTableViewCell.xib; sourceTree = "<group>"; };
 		35DCA0E4202AB77100324EDA /* FormSelectableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormSelectableCell.xib; sourceTree = "<group>"; };
@@ -63,6 +105,7 @@
 			files = (
 				35E453B12029DBBF0022F9E5 /* MZFormSheetPresentationController.framework in Frameworks */,
 				35E453B22029DBBF0022F9E5 /* MZAppearance.framework in Frameworks */,
+				3526923F202D115600D74234 /* Rswift.framework in Frameworks */,
 				356AF7CC2029EDF600C7AEF8 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +113,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35269215202D0FD000D74234 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				35269216202D0FD000D74234 /* FrutigerLTPro-Black.ttf */,
+				35269217202D0FD000D74234 /* FrutigerLTPro-BlackCn.ttf */,
+				35269218202D0FD000D74234 /* FrutigerLTPro-BlackCnIta.ttf */,
+				35269219202D0FD000D74234 /* FrutigerLTPro-BlackItalic.ttf */,
+				3526921A202D0FD000D74234 /* FrutigerLTPro-Bold.ttf */,
+				3526921B202D0FD000D74234 /* FrutigerLTPro-BoldCn.ttf */,
+				3526921C202D0FD000D74234 /* FrutigerLTPro-BoldCnIta.ttf */,
+				3526921D202D0FD000D74234 /* FrutigerLTPro-BoldItalic.ttf */,
+				3526921E202D0FD000D74234 /* FrutigerLTPro-Condensed.ttf */,
+				3526921F202D0FD000D74234 /* FrutigerLTPro-CondensedIta.ttf */,
+				35269220202D0FD000D74234 /* FrutigerLTPro-ExtraBlackCn.ttf */,
+				35269221202D0FD000D74234 /* FrutigerLTPro-ExtraBlkCnIta.ttf */,
+				35269222202D0FD000D74234 /* FrutigerLTPro-Italic.ttf */,
+				35269223202D0FD000D74234 /* FrutigerLTPro-Light.ttf */,
+				35269224202D0FD000D74234 /* FrutigerLTPro-LightCn.ttf */,
+				35269225202D0FD000D74234 /* FrutigerLTPro-LightCnIta.ttf */,
+				35269226202D0FD000D74234 /* FrutigerLTPro-LightItalic.ttf */,
+				35269227202D0FD000D74234 /* FrutigerLTPro-Roman.ttf */,
+				35269228202D0FD000D74234 /* FrutigerLTPro-UltraBlack.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		358CD5612027D6190066F3FC = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +159,8 @@
 		358CD56C2027D6190066F3FC /* SwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
+				35ACA6EE202D127700E0E5F6 /* R.generated.swift */,
+				35269215202D0FD000D74234 /* Fonts */,
 				356AF7CF202A1AFB00C7AEF8 /* Model.swift */,
 				356AF7D1202A1B2900C7AEF8 /* BankVM.swift */,
 				358CD56D2027D6190066F3FC /* AppDelegate.swift */,
@@ -116,6 +187,7 @@
 		35E453AE2029DBBE0022F9E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3526923E202D115600D74234 /* Rswift.framework */,
 				356AF7CB2029EDF600C7AEF8 /* SnapKit.framework */,
 				35E453B02029DBBF0022F9E5 /* MZAppearance.framework */,
 				35E453AF2029DBBF0022F9E5 /* MZFormSheetPresentationController.framework */,
@@ -183,11 +255,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35269231202D0FD000D74234 /* FrutigerLTPro-Condensed.ttf in Resources */,
+				35269232202D0FD000D74234 /* FrutigerLTPro-CondensedIta.ttf in Resources */,
+				3526922C202D0FD000D74234 /* FrutigerLTPro-BlackItalic.ttf in Resources */,
+				35269238202D0FD000D74234 /* FrutigerLTPro-LightCnIta.ttf in Resources */,
 				35DCA0E3202A995700324EDA /* PickerTableViewCell.xib in Resources */,
+				3526923B202D0FD000D74234 /* FrutigerLTPro-UltraBlack.ttf in Resources */,
+				3526922A202D0FD000D74234 /* FrutigerLTPro-BlackCn.ttf in Resources */,
+				35269230202D0FD000D74234 /* FrutigerLTPro-BoldItalic.ttf in Resources */,
+				3526922F202D0FD000D74234 /* FrutigerLTPro-BoldCnIta.ttf in Resources */,
+				35269233202D0FD000D74234 /* FrutigerLTPro-ExtraBlackCn.ttf in Resources */,
+				35269235202D0FD000D74234 /* FrutigerLTPro-Italic.ttf in Resources */,
+				3526922D202D0FD000D74234 /* FrutigerLTPro-Bold.ttf in Resources */,
+				3526922E202D0FD000D74234 /* FrutigerLTPro-BoldCn.ttf in Resources */,
 				35E453B42029E0D10022F9E5 /* PickerViewController.xib in Resources */,
+				35269229202D0FD000D74234 /* FrutigerLTPro-Black.ttf in Resources */,
+				3526922B202D0FD000D74234 /* FrutigerLTPro-BlackCnIta.ttf in Resources */,
 				358CD5782027D61A0066F3FC /* LaunchScreen.storyboard in Resources */,
 				358CD5752027D61A0066F3FC /* Assets.xcassets in Resources */,
+				35269237202D0FD000D74234 /* FrutigerLTPro-LightCn.ttf in Resources */,
+				35269234202D0FD000D74234 /* FrutigerLTPro-ExtraBlkCnIta.ttf in Resources */,
+				35269236202D0FD000D74234 /* FrutigerLTPro-Light.ttf in Resources */,
+				35269239202D0FD000D74234 /* FrutigerLTPro-LightItalic.ttf in Resources */,
 				358CD5732027D61A0066F3FC /* Main.storyboard in Resources */,
+				3526923A202D0FD000D74234 /* FrutigerLTPro-Roman.ttf in Resources */,
 				35DCA0E5202AB77100324EDA /* FormSelectableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +295,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/MZAppearance.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/MZFormSheetPresentationController.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Rswift.framework",
 			);
 			outputPaths = (
 			);
@@ -224,6 +316,7 @@
 				35894836202967D3009486FB /* PickerTableViewCell.swift in Sources */,
 				350E229E202BBFA800DE0EA2 /* ImageView+.swift in Sources */,
 				350E229C202BBF2A00DE0EA2 /* UIColor+.swift in Sources */,
+				35ACA6EF202D127700E0E5F6 /* R.generated.swift in Sources */,
 				356AF7CE2029F2FB00C7AEF8 /* FormViewController.swift in Sources */,
 				350E229A202BBEAF00DE0EA2 /* Constants.swift in Sources */,
 				358CD5702027D6190066F3FC /* ViewController.swift in Sources */,

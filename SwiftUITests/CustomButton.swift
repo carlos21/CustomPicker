@@ -177,8 +177,9 @@ class ButtonBack: UIButton {
     }
 }
 
-@IBDesignable
+//@IBDesignable
 class ButtonPicker: UIButton {
+    
     let width: CGFloat =  1.0
     let arrowImage: UIImageView = UIImageView(image: #imageLiteral(resourceName: "angleDown"))
     
@@ -202,7 +203,7 @@ class ButtonPicker: UIButton {
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        self.titleEdgeInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 20)
+        self.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 20)
         self.contentVerticalAlignment = .center
         self.contentHorizontalAlignment = .left
         

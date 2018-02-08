@@ -18,16 +18,15 @@ class PickerTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         let selectedBackgroundView = UIView()
-        selectedBackgroundView.backgroundColor = .gray
+        selectedBackgroundView.backgroundColor = Color.lightGray5SBColor
         self.selectedBackgroundView = selectedBackgroundView
     }
     
     // MARK: - Private
     
-    func setup<Item>(item: Item) where Item: PickableItem {
-        nameLabel.text = item.description
+    func setup(item: PickableItem) {
+        nameLabel.text = item.localizedDescription
     }
     
 }

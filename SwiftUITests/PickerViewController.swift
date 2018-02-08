@@ -9,16 +9,18 @@
 import Foundation
 import UIKit
 
-protocol PickableItem: CustomStringConvertible {}
+protocol PickableItem {
+    var localizedDescription: String { get }
+}
 
 protocol PickerViewControllerDelegate: NSObjectProtocol {
     
-    func pickerViewController<Item>(_ controller: PickerViewController<Item>, didSelectItem item: Item)
-    func pickerViewControllerCancelPressed<Item>(_ controller: PickerViewController<Item>)
+    func pickerViewController(_ controller: PickerViewController, didSelectItem item: PickableItem)
+    func pickerViewControllerCancelPressed(_ controller: PickerViewController)
     
 }
 
-final class PickerViewController<Item: PickableItem>: UIViewController, UITableViewDataSource, UITableViewDelegate {
+final class PickerViewController: UIViewController {
     
     // MARK: - IBOutlets
     
@@ -26,18 +28,21 @@ final class PickerViewController<Item: PickableItem>: UIViewController, UITableV
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var cancelButton: UIButton!
     @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var separatorView1: UIView!
+    @IBOutlet private weak var separatorView2: UIView!
     
     // MARK: - Properties
     
     weak var delegate: PickerViewControllerDelegate?
-    var selectedItem: Item?
-    var items: [Item] = []
+    var selectedItem: PickableItem?
+    var items: [PickableItem] = []
     
     // MARK: - Lifecycle
     
-    convenience init(items: [Item]) {
-        self.init(nibName: "PickerViewController", bundle: Bundle.main)
+    convenience init(title: String, items: [PickableItem]) {
+        self.init(nibName: String(describing: PickerViewController.self), bundle: Bundle.main)
         self.items = items
+        self.title = title
     }
     
     override func viewDidLoad() {
@@ -50,6 +55,13 @@ final class PickerViewController<Item: PickableItem>: UIViewController, UITableV
         tableView.estimatedRowHeight = 76
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.reloadData()
+        
+        titleLabel.text = title
+        
+//        cancelButton.titleLabel?.font = Font.sbpFontContentBold1
+        cancelButton.setTitleColor(Color.purpleSBColor, for: .normal)
+        cancelButton.setTitle("Cancel", for: .normal)
+        [separatorView1, separatorView2].forEach({ $0?.backgroundColor = Color.lightGray3SBColor })
     }
     
     // MARK: - Actions
@@ -59,7 +71,9 @@ final class PickerViewController<Item: PickableItem>: UIViewController, UITableV
         delegate?.pickerViewControllerCancelPressed(self)
     }
     
-    // MARK: - UITableViewDataSource
+}
+
+extension PickerViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -73,7 +87,9 @@ final class PickerViewController<Item: PickableItem>: UIViewController, UITableV
         return cell
     }
     
-    // MARK: - UITableViewDelegate
+}
+
+extension PickerViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         dismiss(animated: true, completion: nil)

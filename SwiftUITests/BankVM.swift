@@ -13,7 +13,7 @@ struct BankVM: PickableItem {
     // MARK: - Properties
     
     var name: String
-    var description: String {
+    var localizedDescription: String {
         return name
     }
     

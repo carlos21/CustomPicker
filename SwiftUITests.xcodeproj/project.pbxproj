@@ -12,10 +12,10 @@
 		350E229E202BBFA800DE0EA2 /* ImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E229D202BBFA800DE0EA2 /* ImageView+.swift */; };
 		356AF7CC2029EDF600C7AEF8 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356AF7CB2029EDF600C7AEF8 /* SnapKit.framework */; };
 		356AF7CE2029F2FB00C7AEF8 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AF7CD2029F2FB00C7AEF8 /* FormViewController.swift */; };
-		356AF7D0202A1AFB00C7AEF8 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AF7CF202A1AFB00C7AEF8 /* Bank.swift */; };
+		356AF7D0202A1AFB00C7AEF8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AF7CF202A1AFB00C7AEF8 /* Model.swift */; };
 		356AF7D2202A1B2900C7AEF8 /* BankVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AF7D1202A1B2900C7AEF8 /* BankVM.swift */; };
 		3589483220295A4A009486FB /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589483120295A4A009486FB /* PickerViewController.swift */; };
-		3589483420295CE4009486FB /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589483320295CE4009486FB /* FormTableViewCell.swift */; };
+		3589483420295CE4009486FB /* FormSelectableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3589483320295CE4009486FB /* FormSelectableCell.swift */; };
 		35894836202967D3009486FB /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35894835202967D3009486FB /* PickerTableViewCell.swift */; };
 		358CD56E2027D6190066F3FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358CD56D2027D6190066F3FC /* AppDelegate.swift */; };
 		358CD5702027D6190066F3FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358CD56F2027D6190066F3FC /* ViewController.swift */; };
@@ -24,7 +24,7 @@
 		358CD5782027D61A0066F3FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358CD5762027D61A0066F3FC /* LaunchScreen.storyboard */; };
 		35CD8586202BB82700368131 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CD8585202BB82700368131 /* CustomButton.swift */; };
 		35DCA0E3202A995700324EDA /* PickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DCA0E2202A995700324EDA /* PickerTableViewCell.xib */; };
-		35DCA0E5202AB77100324EDA /* FormTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DCA0E4202AB77100324EDA /* FormTableViewCell.xib */; };
+		35DCA0E5202AB77100324EDA /* FormSelectableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DCA0E4202AB77100324EDA /* FormSelectableCell.xib */; };
 		35E453B12029DBBF0022F9E5 /* MZFormSheetPresentationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E453AF2029DBBF0022F9E5 /* MZFormSheetPresentationController.framework */; };
 		35E453B22029DBBF0022F9E5 /* MZAppearance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E453B02029DBBF0022F9E5 /* MZAppearance.framework */; };
 		35E453B42029E0D10022F9E5 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E453B32029E0D10022F9E5 /* PickerViewController.xib */; };
@@ -36,10 +36,10 @@
 		350E229D202BBFA800DE0EA2 /* ImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+.swift"; sourceTree = "<group>"; };
 		356AF7CB2029EDF600C7AEF8 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		356AF7CD2029F2FB00C7AEF8 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
-		356AF7CF202A1AFB00C7AEF8 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		356AF7CF202A1AFB00C7AEF8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		356AF7D1202A1B2900C7AEF8 /* BankVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankVM.swift; sourceTree = "<group>"; };
 		3589483120295A4A009486FB /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
-		3589483320295CE4009486FB /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		3589483320295CE4009486FB /* FormSelectableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSelectableCell.swift; sourceTree = "<group>"; };
 		35894835202967D3009486FB /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
 		358CD56A2027D6190066F3FC /* SwiftUITests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		358CD56D2027D6190066F3FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		358CD5792027D61A0066F3FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35CD8585202BB82700368131 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		35DCA0E2202A995700324EDA /* PickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerTableViewCell.xib; sourceTree = "<group>"; };
-		35DCA0E4202AB77100324EDA /* FormTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTableViewCell.xib; sourceTree = "<group>"; };
+		35DCA0E4202AB77100324EDA /* FormSelectableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormSelectableCell.xib; sourceTree = "<group>"; };
 		35E453AF2029DBBF0022F9E5 /* MZFormSheetPresentationController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MZFormSheetPresentationController.framework; path = Carthage/Build/iOS/MZFormSheetPresentationController.framework; sourceTree = "<group>"; };
 		35E453B02029DBBF0022F9E5 /* MZAppearance.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MZAppearance.framework; path = Carthage/Build/iOS/MZAppearance.framework; sourceTree = "<group>"; };
 		35E453B32029E0D10022F9E5 /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
@@ -90,13 +90,13 @@
 		358CD56C2027D6190066F3FC /* SwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				356AF7CF202A1AFB00C7AEF8 /* Bank.swift */,
+				356AF7CF202A1AFB00C7AEF8 /* Model.swift */,
 				356AF7D1202A1B2900C7AEF8 /* BankVM.swift */,
 				358CD56D2027D6190066F3FC /* AppDelegate.swift */,
 				358CD56F2027D6190066F3FC /* ViewController.swift */,
 				356AF7CD2029F2FB00C7AEF8 /* FormViewController.swift */,
-				3589483320295CE4009486FB /* FormTableViewCell.swift */,
-				35DCA0E4202AB77100324EDA /* FormTableViewCell.xib */,
+				3589483320295CE4009486FB /* FormSelectableCell.swift */,
+				35DCA0E4202AB77100324EDA /* FormSelectableCell.xib */,
 				3589483120295A4A009486FB /* PickerViewController.swift */,
 				35E453B32029E0D10022F9E5 /* PickerViewController.xib */,
 				35894835202967D3009486FB /* PickerTableViewCell.swift */,
@@ -188,7 +188,7 @@
 				358CD5782027D61A0066F3FC /* LaunchScreen.storyboard in Resources */,
 				358CD5752027D61A0066F3FC /* Assets.xcassets in Resources */,
 				358CD5732027D61A0066F3FC /* Main.storyboard in Resources */,
-				35DCA0E5202AB77100324EDA /* FormTableViewCell.xib in Resources */,
+				35DCA0E5202AB77100324EDA /* FormSelectableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3589483420295CE4009486FB /* FormTableViewCell.swift in Sources */,
-				356AF7D0202A1AFB00C7AEF8 /* Bank.swift in Sources */,
+				3589483420295CE4009486FB /* FormSelectableCell.swift in Sources */,
+				356AF7D0202A1AFB00C7AEF8 /* Model.swift in Sources */,
 				35CD8586202BB82700368131 /* CustomButton.swift in Sources */,
 				35894836202967D3009486FB /* PickerTableViewCell.swift in Sources */,
 				350E229E202BBFA800DE0EA2 /* ImageView+.swift in Sources */,
